@@ -186,10 +186,22 @@
     animation:space-bottom-move;
 }
 
+
+
+.ex-13-top-white{
+    /* background: red; */
+    animation: space-top-spin;
+}
+
+.ex-13-bottom-white{
+    /* background: blue; */
+    animation: space-bottom-spin;
+}
+
 .ex-12-top-white, .ex-12-bottom-white, .ex-13-top-white,.ex-13-bottom-white{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-duration: 2s;
+    animation-duration: 4s;
 }
 
 @keyframes space-top-move {
@@ -219,16 +231,65 @@
     }
 }
 
-.ex-13-top-white{
-    animation: space-top-spin;
-}
-
-.ex-13-bottom-white{
-    animation: space-bottom-spin;
-}
-
 @keyframes space-top-spin {
     0%{
         left:10%;
+        top:-10px;
+    }
+
+    30%{
+        left:75%;
+        top:-10px;
+    }
+
+    50%{
+        left:75%;
+        top:60px;
+    }
+
+    70%{
+        left:calc(10% - 60px);
+        top:60px;
+    }
+
+    90%{
+        left:calc(10% - 60px);
+        top:-10px;
+    }
+
+    100%{
+        left:10%;
+        top:-10px;
+    }
+}
+@keyframes space-bottom-spin {
+    0%{
+        right:20%;
+        bottom:-10px;
+    }
+
+    30%{
+        right:75%;
+        bottom:-10px;
+    }
+
+    50%{
+        right:75%;
+        bottom:60px;
+    }
+
+    70%{
+        right:-10%;
+        bottom:60px;
+    }
+
+    90%{
+        right:-10%;
+        bottom:-10px;
+    }
+
+    100%{
+        right:20%;
+        bottom:-10px;
     }
 }
