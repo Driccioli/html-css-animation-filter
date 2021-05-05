@@ -75,7 +75,7 @@
 }
 
 .ex-8-img:hover, .ex-9-img:hover{
-    filter: rotate(45deg) contrast(1);
+    filter: hue-rotate(45deg) contrast(0.5);
     border-radius: 12px;
 }
 
