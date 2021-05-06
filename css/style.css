@@ -16,7 +16,7 @@
 }
 
     .ex-2-square:active{
-        width: 300px;
+        width: 500px;
     }
 
 .ex-3-square {
@@ -50,13 +50,11 @@
 }
 
     .ex-5-square:hover{
-        width: 80px;
-        height:80px;
+        transform:scale(1.5)
     }
 
     .ex-5-square:active{
-        width: 40px;
-        height: 40px;
+        transform: scale(0.5);
     }
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
@@ -85,7 +83,7 @@
 }
 
 .ex-9-img:hover{
-    width:600px;
+    transform: scale(1.5);
 }
 .ex-10-icon {
     font-size: 60px;
